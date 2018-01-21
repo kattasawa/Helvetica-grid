@@ -1,0 +1,117 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  background: #c8dae0;
+  font-family: helvetica;
+  color: black;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 150px);
+  grid-auto-rows: minmax(150px, 150px);
+  grid-gap: 15px;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.grid-container div {
+  background: white;
+}
+
+.tall {
+  grid-row: span 2;
+}
+
+.wide {
+  grid-column: span 2;
+}
+
+.tall, .wide img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: block;
+}
+
+.tall img {
+  width: auto;
+  height: 315px;
+
+}
+
+#tree {
+  background-image: url("../assets/curly_bracet.png");
+  background-size: cover;
+  background-position: 68% 70%;
+}
+
+#four {
+  background-image: url("../assets/and.png");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-family: helvetica;
+  font-size: 40px;
+  color: black;
+}
+
+span {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: helvetica;
+  font-size: 16px;
+  color: black;
+  word-wrap: break-word;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 24px auto;
+  padding: 10px;
+  letter-spacing: none;
+}
+
+h4 {
+  font-family: helvetica;
+  font-weight: bold;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 24px auto;
+  padding: 10px;
+  letter-spacing: 10px;
+}
+
+p {
+  font-family: Helvetica;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+}
+
+.text-container {
+  padding: 10px;
+}
+
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 150px);
+    grid-auto-flow: dense;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 150px);
+    grid-auto-flow: dense;
+  }
+}
