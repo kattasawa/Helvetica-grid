@@ -42,13 +42,13 @@ body {
 }
 
 #tree {
-  background-image: url("../assets/curly_bracet.png");
+  background-image: url("./curly_bracet.png");
   background-size: cover;
   background-position: 68% 70%;
 }
 
 #four {
-  background-image: url("../assets/and.png");
+  background-image: url("./and.png");
   background-size: cover;
   width: 100%;
   height: 100%;
